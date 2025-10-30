@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~/</title>
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <!--bg-->
+    <div class="bg-image"></div>
+
+
+    <!--main-container-->
+    <div class="container">
+      <!--clock-section-->
+      <div class="clock-section">
+        <div class="time" id="time"></div>
+        <div class="date" id="date"></div>
+      </div>
+
+      <!-- Links Grid -->
+        <div class="links-grid">
+            <!-- chan -->
+            <div class="link-category">
+                <h2><span class="icon"></span> 󰃥 Boards</h2>
+                <div class="links">
+                    <a href="#" data-href="https://boards.4chan.org/g/">Technology</a>
+                    <a href="#" data-href="https://boards.4chan.org/pol/">Politics</a>
+                    <a href="#" data-href="https://boards.4chan.org/x/">Paranormal</a>
+                    <a href="#" data-href="https://boards.4chan.org/wg/">Wallpapers</a>
+                    <a href="#" data-href="https://boards.4chan.org/lit/">Literature</a>
+                    <a href="#" data-href="https://boards.4chan.org/his/">History</a>
+                </div>
+            </div>
+
+            <!-- Reddit -->
+            <div class="link-category">
+                <h2><span class="icon"></span>  Reddit</h2>
+                <div class="links">
+                    <a href="#" data-href="https://reddit.com/r/unixporn">r/unixprn</a>
+                    <a href="#" data-href="https://reddit.com/r/unixart">r/unixart</a>
+                    <a href="#" data-href="https://reddit.com/r/linux">r/linux</a>
+                    <a href="#" data-href="https://reddit.com/r/gentoo">r/gentoo</a>
+                    <a href="#" data-href="https://reddit.com/r/emacs">r/emacs</a>
+                </div>
+            </div>
+
+            <!-- Media -->
+            <div class="link-category">
+                <h2><span class="icon"></span> 󰑈 Media</h2>
+                <div class="links">
+                    <a href="#" data-href="https://youtube.com">Home</a>
+                    <a href="#" data-href="https://youtube.com/feed/subscriptions">Subscriptions</a>
+                    <a href="#" data-href="https://youtube.com/feed/library">Library</a>
+                    <a href="#" data-href="https://youtube.com/feed/history">History</a>
+                    <a href="#" data-href="https://netflix.com">Netflix</a>
+                    <a href="#" data-href="https://xcine.io">Movies</a>
+                </div>
+            </div>
+
+            <!-- Docs & Forums -->
+            <div class="link-category">
+                <h2><span class="icon"></span> 󰈙 Docs & Forums</h2>
+                <div class="links">
+                    <a href="#" data-href="https://emacsdocs.org/">Emacs Docs</a>
+                    <a href="#" data-href="https://wiki.gentoo.org/">Gentoo Wiki</a>
+                    <a href="#" data-href="https://wiki.archlinux.org/">Arch Wiki</a>
+                    <a href="#" data-href="https://stackoverflow.com/">Stack Overflow</a>
+                    <a href="#" data-href="https://github.com/">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Popup-->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search or use prefix ➜ yt:, gh:, aw:, r:" autocomplete="off">
+        <div class="search-hint">
+          <span>google</span>
+          <span>yt: youtube</span>
+          <span>gh: github</span>
+          <span>aw: arch wiki</span>
+          <span>r: reddit</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

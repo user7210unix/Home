@@ -1,0 +1,45 @@
+/* fonts/fonts.css */
+
+/* M PLUS Code Latin */
+@font-face {
+    font-family: 'M PLUS Code Latin';
+    src: url('MPLUSCodeLatin-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'M PLUS Code Latin';
+    src: url('MPLUSCodeLatin-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'M PLUS Code Latin';
+    src: url('MPLUSCodeLatin-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* JetBrainsMono Nerd Font */
+@font-face {
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('JetBrainsMonoNerdFont-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono Nerd Font';
+    src: url('JetBrainsMonoNerdFont-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
