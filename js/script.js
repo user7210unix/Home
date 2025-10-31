@@ -20,12 +20,16 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
-// Firefox link bypass - Use window.location instead of direct navigation
-document.querySelectorAll('a[data-href]').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const url = this.getAttribute('data-href');
-        window.location.href = url;
+// Firefox link bypass - Use window.open for better compatibility
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[data-href]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const url = this.getAttribute('data-href');
+            // Open in same tab
+            window.open(url, '_self');
+        });
     });
 });
 
@@ -107,8 +111,8 @@ function handleSearch(query) {
         url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
     }
     
-    // Navigate using window.location for Firefox compatibility
-    window.location.href = url;
+    // Navigate using window.open for better compatibility
+    window.open(url, '_self');
 }
 
 // Add smooth scroll behavior
